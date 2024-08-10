@@ -21,7 +21,7 @@ dependencies {
     testImplementation("org.wiremock:wiremock:3.9.1")
 
     // json
-    implementation(platform("com.fasterxml.jackson:jackson-bom:2.17.1"))
+    implementation(platform("com.fasterxml.jackson:jackson-bom:2.17.2"))
     implementation("com.fasterxml.jackson.core:jackson-annotations")
     implementation("com.fasterxml.jackson.core:jackson-core")
     implementation("com.fasterxml.jackson.core:jackson-databind")
