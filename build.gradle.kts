@@ -12,11 +12,19 @@ repositories {
 
 dependencies {
     // logging
-    implementation("org.slf4j:slf4j-api:2.0.13")
+    implementation(platform("org.slf4j:slf4j-bom:2.0.14"))
+    implementation("org.slf4j:slf4j-api")
 
     // testing
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.wiremock:wiremock:3.9.1")
+
+    // json
+    implementation(platform("com.fasterxml.jackson:jackson-bom:2.17.1"))
+    implementation("com.fasterxml.jackson.core:jackson-annotations")
+    implementation("com.fasterxml.jackson.core:jackson-core")
+    implementation("com.fasterxml.jackson.core:jackson-databind")
 }
 
 tasks.test {
