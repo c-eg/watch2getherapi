@@ -18,6 +18,7 @@ dependencies {
     // testing
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.wiremock:wiremock:3.9.1")
 
     // json
     implementation(platform("com.fasterxml.jackson:jackson-bom:2.17.1"))
