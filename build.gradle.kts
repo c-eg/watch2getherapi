@@ -12,7 +12,8 @@ repositories {
 
 dependencies {
     // logging
-    implementation("org.slf4j:slf4j-api:2.0.13")
+    implementation(platform("org.slf4j:slf4j-bom:2.0.14"))
+    implementation("org.slf4j:slf4j-api")
 
     // testing
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
