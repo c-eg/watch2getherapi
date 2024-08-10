@@ -17,8 +17,14 @@ import static com.github.tomakehurst.wiremock.client.WireMock.post;
 import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * Tests for {@link Watch2GetherApi}.
+ */
 @WireMockTest
 public class Watch2GetherApiTest {
+    /**
+     * Tests {@link Watch2GetherApi#createRoom(String, String, Integer)} with an expected result.
+     */
     @Test
     public void testCreateRoom(WireMockRuntimeInfo wmRuntimeInfo) throws W2GException, IOException {
         String responseBody = TestUtils.readTestFile("api_responses/create_room.json");
@@ -29,6 +35,9 @@ public class Watch2GetherApiTest {
         assertNotNull(createRoomResponse);
     }
 
+    /**
+     * Tests {@link Watch2GetherApi#shareItem(String, String)} with an expected result.
+     */
     @Test
     public void testShareItem(WireMockRuntimeInfo wmRuntimeInfo) throws W2GException {
         String streamKey = "streamKey";
@@ -38,6 +47,9 @@ public class Watch2GetherApiTest {
         api.shareItem(streamKey, "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 
+    /**
+     * Tests {@link Watch2GetherApi#addToPlaylist(String, List)} with an expected result.
+     */
     @Test
     public void testAddToPlaylist(WireMockRuntimeInfo wmRuntimeInfo) throws W2GException {
         String streamKey = "streamKey";
