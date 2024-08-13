@@ -9,6 +9,28 @@ This library provides a Java-wrapper around the [JSON API](https://community.w2g
 It's available via [Maven Central](https://central.sonatype.com/artifact/uk.co.conoregan/watch2getherapi). Just add it as dependency to your
 project.
 
+<details open>
+<summary>Maven</summary>
+
+```xml
+<dependency>
+    <groupId>uk.co.conoregan</groupId>
+    <artifactId>watch2getherapi</artifactId>
+    <version>{version}</version>
+</dependency>
+```
+</details>
+
+<details>
+<summary>Gradle (Kotlin)</summary>
+
+```kotlin
+dependencies {
+    implementation("uk.co.conoregan:watch2getherapi:{version}")
+}
+```
+</details>
+
 ## Usage
 To register for a Watch2Gether API key, click Tools / API from within your [profile page](https://w2g.tv/en/account/edit_user/).
 
