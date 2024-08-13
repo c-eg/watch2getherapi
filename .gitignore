@@ -37,3 +37,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# sonatype credentials
+local.properties
+*.gpg
